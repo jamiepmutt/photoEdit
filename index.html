@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+<!--    <link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    
+    <header>
+      <h1>This is my photo edit program</h1>
+    </header>
+    <div id="wrap">
+      <h2>Please upload the photo you would like to edit</h2>
+    
+       
+        <input type="file" id="imageLoader" name="imageLoader" />
+      <div id="resize">
+        <canvas id="canvasImage"></canvas>
+      </div>
+        <a id="imageSaver" href="#">Save image</a>
+        <p>
+					<label for="width">Line Width</label>
+					<input id="width" name="width" type="range" min=1 max=100 value=1>
+				</p>
+
+    </div>
+        
+    <div class="controls">
+		<ul>
+			<li class="red selected"></li>
+			<li class="blue"></li>
+			<li class="yellow"></li>
+		</ul>
+		<button id="revealColorSelect">New Color</button>
+		<div id="colorSelect">
+			<span id="newColor"></span>
+			<div class="sliders">
+				<p>
+					<label for="red">Red</label>
+					<input id="red" name="red" type="range" min=0 max=255 value=0>
+				</p>
+				<p>
+					<label for="green">Green</label>
+					<input id="green" name="green" type="range" min=0 max=255 value=0>
+				</p>
+				<p>
+					<label for="blue">Blue</label>
+					<input id="blue" name="blue" type="range" min=0 max=255 value=0>
+				</p>
+			</div>
+      
+			<div>
+			 <button id="addNewColor">Add Color</button>
+			</div>
+      
+      
+		</div>
+   </div>
+    <footer>
+    
+    </footer>
+    
+  	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="js/photoedit.js" type="text/javascript" charset="utf-8"></script>
+    
+  </body>
+  
+</html>
